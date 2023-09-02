@@ -94,6 +94,16 @@ body {
     justify-content: space-between;
 }
 
+#controls button:hover {
+    color: var(--button-secondary);
+}
+
+#controls button:active {
+    background-color: var(--controls-bg-color);
+    border-radius: .8rem;
+    border: 1px solid var(--primary-color);
+}
+
 #sons {
     width: 30.8rem;
     flex-wrap: wrap;

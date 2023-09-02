@@ -34,33 +34,49 @@
         </article>
 
         <article id="controls" class="flex">
-          <button data-action="toggleRunning" class="ph ph-play-circle">
+          <button
+            id="bt-play"
+            data-action="toggleRunning"
+            class="ph ph-play-circle"
+          >
             <span class="sr-only">Iniciar contador</span>
           </button>
-          <button data-action="reset" class="ph ph-stop-circle">
+          <button id="bt-stop" data-action="reset" class="ph ph-stop-circle">
             <span class="sr-only">Reiniciar contador</span>
           </button>
-          <button data-action="incrementMinutes" class="ph ph-plus-circle">
-            <span class="sr-only">Iniciar música</span>
+          <button
+            id="btn-incr"
+            data-action="incrementMinutes"
+            class="ph ph-plus-circle"
+          >
+            <span class="sr-only"
+              >Incrementar mais cinco minutos no cronometro</span
+            >
           </button>
-          <button data-action="decrementMinutes" class="ph ph-minus-circle">
-            <span class="sr-only">Parar música</span>
+          <button
+            id="btn-desc"
+            data-action="decrementMinutes"
+            class="ph ph-minus-circle"
+          >
+            <span class="sr-only"
+              >Decrementar mais cinco minutos no cronometro</span
+            >
           </button>
         </article>
       </section>
 
       <section id="sons" class="flex">
-        <button data-action="set" class="ph ph-plant secondary">
-          <span class="sr-only">Ajustar contador</span>
+        <button data-action="set" class="ph ph-plant">
+          <span class="sr-only">Toca som de floresta</span>
         </button>
-        <button data-action="reset" class="ph ph-cloud-rain secondary">
-          <span class="sr-only">Reiniciar contador</span>
+        <button data-action="reset" class="ph ph-cloud-rain">
+          <span class="sr-only">Toca som de chuva</span>
         </button>
         <button data-action="toggleMusic" class="ph ph-house-line">
-          <span class="sr-only">Iniciar música</span>
+          <span class="sr-only">Toca som de casa</span>
         </button>
         <button data-action="toggleMusic" class="ph ph-fire card-secondary">
-          <span class="sr-only">Parar música</span>
+          <span class="sr-only">Toca som de fogo</span>
         </button>
       </section>
     </div>
