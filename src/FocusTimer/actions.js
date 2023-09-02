@@ -65,3 +65,47 @@ export function toggleMusic() {
 
   sounds.bgAudio.pause();
 }
+
+export function setForest() {
+  // Modificar a classe do botão
+  el.btSetForest.classList.add("card-secondary");
+  el.btSetRain.classList.remove("card-secondary");
+  el.btSetCoffeeShop.classList.remove("card-secondary");
+  el.btSetFirePlace.classList.remove("card-secondary");
+  // Modificar o estado do app
+  // Modificar o audio
+  console.log("sound forest");
+}
+
+export function setRain() {
+  // Modificar a classe do botão
+  el.btSetForest.classList.remove("card-secondary");
+  el.btSetRain.classList.add("card-secondary");
+  el.btSetCoffeeShop.classList.remove("card-secondary");
+  el.btSetFirePlace.classList.remove("card-secondary");
+  // Modificar o estado do app
+  // Modificar o audio
+  console.log("sound rain");
+}
+
+export function setCoffeeShop() {
+  // Modificar a classe do botão
+  el.btSetForest.classList.remove("card-secondary");
+  el.btSetRain.classList.remove("card-secondary");
+  el.btSetCoffeeShop.classList.add("card-secondary");
+  el.btSetFirePlace.classList.remove("card-secondary");
+  // Modificar o estado do app
+  // Modificar o audio
+  console.log("sound coffee shop");
+}
+
+export function setFirePlace() {
+  // Modificar a classe do botão
+  el.btSetForest.classList.remove("card-secondary");
+  el.btSetRain.classList.remove("card-secondary");
+  el.btSetCoffeeShop.classList.remove("card-secondary");
+  el.btSetFirePlace.classList.add("card-secondary");
+  // Modificar o estado do app
+  // Modificar o audio
+  console.log("sound fire place");
+}
