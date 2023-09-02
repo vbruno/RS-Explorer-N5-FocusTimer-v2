@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hue: 50;
+    --bg-color: hsl(var(--hue), 5%, 7%);
+    --text-color: hsl(var(--hue), 40%, 98%);
+    --primary-color: hsl(var(--hue), 100%, 63%);
+    --controls-bg-color: hsl(var(--hue), 0%, 14%);
+    --button-secondary: hsl(var(--hue), 40%, 98%);
+    --card-primary-bg-color: hsl(var(--hue), 50%, 15%);
+    --card-secondary-bg-color: hsl(var(--hue), 40%, 70%);
+
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+html.light {
+    --text-color: hsl(var(--hue), 5%, 7%);
+    --bg-color: hsl(var(--hue), 40%, 98%);
+    --controls-bg-color: hsl(var(--hue), 0%, 14%);
+    --card-primary-bg-color: hsl(var(--hue), 40%, 70%);
+    --card-secondary-bg-color: hsl(var(--hue), 50%, 15%);
+}
+
+html.light .ph-sun,
+html:not(.light) .ph-moon {
+    display: none;
+}
+
+#toggle-mode {
+    position: absolute;
+    right: 3.2rem;
+    top: 3.2rem;
+    font-size: 3.2rem;
+    line-height: 0;
+    color: var(--text-color);
+}
+
+.sr-only {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    padding: 0px;
+    border: 0;
+    appearance: none;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
+
+#app {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+
+    gap: 19.2rem;
+}
+
+.wrapper-timer {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.flex {
+    display: flex;
+}
+
+#timer {
+    width: 31.2rem;
+    font-size: 12.6rem;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+}
+
+#controls {
+    width: 31.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#sons {
+    width: 30.8rem;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+
+#sons button {
+    width: 13.8rem;
+    height: 15.2rem;
+
+    background-color: var(--card-primary-bg-color);
+    border: 0;
+    border-radius: .8rem;
+    color: var(--button-secondary-color);
+    cursor: pointer;
+    font-size: 6.4rem;
+}
+
+#sons .card-secondary {
+    background-color: var(--card-secondary-bg-color);
+    color: var(--card-primary-bg-color);
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 6.4rem;
+}
+
+.secondary {
+    color: var(--button-secondary);
+}
+
+
+/* controls */
+/* .running .ph-play-circle,
+.running .ph-timer,
+.music-on .ph-speaker-none,
+html:not(.running) .ph-pause-circle,
+html:not(.running) .ph-stop-circle,
+html:not(.music-on) .ph-speaker-high {
+  display: none;
+} */
