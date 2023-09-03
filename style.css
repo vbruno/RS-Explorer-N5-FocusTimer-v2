@@ -23,6 +23,7 @@ html.light {
     --controls-bg-color: hsl(var(--hue), 0%, 14%);
     --card-primary-bg-color: hsl(var(--hue), 40%, 70%);
     --card-secondary-bg-color: hsl(var(--hue), 50%, 15%);
+    --button-secondary: hsl(var(--hue), 5%, 7%);
 }
 
 html.light .ph-sun,
@@ -102,6 +103,7 @@ body {
     background-color: var(--controls-bg-color);
     border-radius: .8rem;
     border: 1px solid var(--primary-color);
+    color: var(--button-secondary);
 }
 
 #sounds {
@@ -144,6 +146,10 @@ button {
     color: var(--button-secondary);
 }
 
+.disabled {
+    color: var(--controls-bg-color);
+    cursor: not-allowed;
+}
 
 /* controls */
 /* .running .ph-play-circle,

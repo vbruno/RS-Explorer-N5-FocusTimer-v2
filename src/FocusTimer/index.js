@@ -10,5 +10,4 @@ export function start(minutes, seconds) {
 
   events.registerControls();
   events.chosenSound();
-  events.setMinutes();
 }
